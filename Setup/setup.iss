@@ -1,6 +1,6 @@
 ﻿#define MyAppName "Bandie"
 #define MyAppVersion "0.18.11.1"
-#define MyAppPublisher "Digital Resistance (UZ)"
+#define MyAppPublisher "Digital Resistance"
 
 [Setup]
 DisableWelcomePage=no
@@ -9,7 +9,7 @@ AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisher={#MyAppPublisher}
-OutputBaseFilename=bandai_setup
+OutputBaseFilename=bandie_setup
 Compression=lzma2/ultra64
 SolidCompression=yes
 InternalCompressLevel=ultra64
@@ -17,7 +17,7 @@ SetupIconFile=icon.ico
 WizardImageFile=164x314.bmp
 WizardSmallImageFile=55x55.bmp
 AppCopyright=Copyright (C) {#MyAppPublisher}, 2018
-OutputDir=bin
+OutputDir=..\bin
 AlwaysShowGroupOnReadyPage=True
 AlwaysShowDirOnReadyPage=True
 AppMutex=2465A86D-0A16-48F7-9C7A-D616564C7777
