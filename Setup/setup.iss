@@ -1,5 +1,5 @@
 ﻿#define MyAppName "Bandie"
-#define MyAppVersion "0.18.11.1"
+#define MyAppVersion "0.18.11.15"
 #define MyAppPublisher "Digital Resistance"
 
 [Setup]

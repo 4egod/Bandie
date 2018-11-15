@@ -29,7 +29,7 @@ void Filter::start()
 	PWINDIVERT_IPHDR ip_header;
 	PWINDIVERT_TCPHDR tcp_header;
 
-	handle = WinDivertOpen("true", WINDIVERT_LAYER_NETWORK, 0, 0);
+	handle = WinDivertOpen("inbound and tcp.Syn", WINDIVERT_LAYER_NETWORK, 0, 0);
 	if (handle == INVALID_HANDLE_VALUE)
 	{
 		fprintf(stderr, "error: failed to open the WinDivert device (%d)\n", GetLastError());
