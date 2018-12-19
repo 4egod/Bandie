@@ -1,5 +1,5 @@
 ﻿#define MyAppName "Bandie"
-#define MyAppVersion "1.18.11.22"
+#define MyAppVersion "1.18.12.19"
 #define MyAppPublisher "Digital Resistance"
 
 [Setup]
@@ -47,12 +47,12 @@ AppendDefaultDirName=False
 UsePreviousGroup=False
 
 [Files]
-Source: "..\x64\Release\Bandie.exe"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 64bit; Check: Is64BitInstallMode
-Source: "..\x64\Release\WinDivert.dll"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 64bit; Check: Is64BitInstallMode
-Source: "..\x64\Release\WinDivert64.sys"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 64bit; Check: Is64BitInstallMode
-Source: "..\Release\Bandie.exe"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 32bit; Check: not Is64BitInstallMode
-Source: "..\Release\WinDivert.dll"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 32bit; Check: not Is64BitInstallMode
-Source: "..\Release\WinDivert32.sys"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 32bit; Check: not Is64BitInstallMode
+Source: "..\x64\Bandie.exe"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 64bit; Check: Is64BitInstallMode
+Source: "..\x64\WinDivert.dll"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 64bit; Check: Is64BitInstallMode
+Source: "..\x64\WinDivert64.sys"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 64bit; Check: Is64BitInstallMode
+Source: "..\x86\Bandie.exe"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 32bit; Check: not Is64BitInstallMode
+Source: "..\x86\WinDivert.dll"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 32bit; Check: not Is64BitInstallMode
+Source: "..\x86\WinDivert32.sys"; DestDir: "{app}"; Flags: ignoreversion replacesameversion 32bit; Check: not Is64BitInstallMode
 
 [Icons]
 Name: "{userdesktop}\{#MyAppName}"; Filename: "{app}\Bandie.exe"; WorkingDir: "{app}"; IconFilename: "{app}\Bandie.exe"; IconIndex: 0
